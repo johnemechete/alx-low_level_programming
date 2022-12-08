@@ -1,6 +1,11 @@
 #include <stdio.h>
 /**
-*the code below is print a string.
+* main - Essential function
+*
+* Description: to print strings with the printf function
+*
+*Return: return zero if it is successful
+*
 */
 int main(void)
 {
