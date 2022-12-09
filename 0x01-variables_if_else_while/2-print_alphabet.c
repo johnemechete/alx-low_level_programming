@@ -9,9 +9,11 @@ int main(void)
 {
 	int c = 97;
 
-	while (c < 123)
+	while (c == 33 || c < 123)
 	{
 		putchar(c);
+		if (c == 122)
+			c = 32;
 		c++;
 	}
 	return (0);
