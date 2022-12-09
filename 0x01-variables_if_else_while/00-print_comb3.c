@@ -16,8 +16,6 @@ int main(void)
 
 			if (c == e)
 				continue;
-			putchar(c);
-			putchar(e);
 			if (c != 56 || e != 57)
 			{
 				putchar(44);
