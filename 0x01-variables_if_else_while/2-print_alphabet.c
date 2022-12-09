@@ -11,12 +11,9 @@ int main(void)
 
 	while (c == 33 || c < 123)
 	{
-		if (c == 33)
-			break;
 		putchar(c);
 		c++;
-		if (c == 123)
-			c = 32;
 	}
+	putchar("\n");
 	return (0);
 }
