@@ -9,10 +9,10 @@ int main(void)
 {
 	int c = 96;
 
-	while (c < 123)
+	while (c < 122)
 	{
 		c++;
-		if (c != 101 || c != 113)
+		if (c != 101 && c != 113)
 			putchar(c);
 	}
 	putchar('\n');
