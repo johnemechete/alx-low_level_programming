@@ -12,7 +12,7 @@ int main(void)
 	while (c < 123)
 	{
 		putchar(c);
-		++c;
+		c++;
 	}
 	return (0);
 }
