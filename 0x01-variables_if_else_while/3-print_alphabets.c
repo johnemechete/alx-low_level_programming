@@ -7,9 +7,15 @@
 */
 int main(void)
 {
-	int c = 65;
+	int c = 97;
 
 	while (c < 123)
+	{
+		putchar(c);
+		c++;
+	}
+	c = 65;
+	while (c < 91)
 	{
 		putchar(c);
 		c++;
