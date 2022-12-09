@@ -11,10 +11,12 @@ int main(void)
 
 	while (c == 33 || c < 123)
 	{
+		if (c == 33)
+			break;
 		putchar(c);
-		if (c == 122)
-			c = 32;
 		c++;
+		if (c == 123)
+			c = 32;
 	}
 	return (0);
 }
