@@ -2,7 +2,7 @@
 /**
 * _islower- To print the alphabet
 * @c: takes an int value
-* Return: return 1 if it is an Alphabet  case else 0
+* Return: return 0 if it is an Alphabet  case else 1
 */
 
 int _isalpha(int c)
@@ -12,9 +12,9 @@ int _isalpha(int c)
 	int A = 'A';
 	int Z = 'Z';
 
-	if ((c < a && c > z) || (c < A && c > Z))
-		return (1);
-	else
+	if ((c < a || c > z) || (c < A || c > Z))
 		return (0);
+	else
+		return (1);
 
 }
