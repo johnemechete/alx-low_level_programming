@@ -1,6 +1,5 @@
 #include "main.h"
-/* 
-* This fuction is to print the alphabet 
+/*
 *
 */
 

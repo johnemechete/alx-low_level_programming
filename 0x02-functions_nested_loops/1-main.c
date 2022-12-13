@@ -2,7 +2,7 @@
 
 /**
 * main - check the code
-*
+* Description: Toprint alphabet
 * Return: Always 0.
 */
 int main(void)
