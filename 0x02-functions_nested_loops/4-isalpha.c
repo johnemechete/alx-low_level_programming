@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _islower- To print the alphabet
+* _isalpha - To print the alphabet
 * @c: takes an int value
 * Return: return 0 if it is an Alphabet  case else 1
 */
