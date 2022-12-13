@@ -1,7 +1,6 @@
 #include "main.h"
 /**
 * times_table - prints the 9 times table, starting with 0.
-* @n: takes an int value
 * Return: return 0 if it is an Alphabet  case else 1
 */
 
@@ -18,7 +17,7 @@ void times_table(void)
 			f = c % 10;
 			if (b == 0)
 				_putchar('0');
-			else if  ( c < 10)
+			else if  (c < 10)
 			{
 				_putchar(',');
 				_putchar(' ');
