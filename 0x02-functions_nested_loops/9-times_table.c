@@ -16,7 +16,7 @@ void times_table(void)
 			c = a * b;
 			d = c / 10;
 			f = c % 10;
-			if (d == 0)
+			if (b == 0)
 				_putchar('0');
 			else if  ( c < 10)
 			{
