@@ -2,7 +2,7 @@
 /**
 * _islower- To print the alphabet
 * @c: takes an int value
-* Return: return 1 if it is lower case else 0
+* Return: return 0 if it is lower case else 1
 */
 
 int _islower(int c)
@@ -11,8 +11,8 @@ int _islower(int c)
 	int z = 'z';
 
 	if (c < a || c > z)
-		return (1);
-	else
 		return (0);
+	else
+		return (1);
 
 }
