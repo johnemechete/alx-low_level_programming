@@ -1,6 +1,4 @@
 #include <stdio.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
 /**
 * positive_or_negative - To check if a number is positive or negative
 * @n: This code is to tell us if the number is negative or positive
