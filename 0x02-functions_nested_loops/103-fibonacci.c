@@ -6,6 +6,7 @@
 int main(void)
 {
 	signed long int old = 1, new = 2, sum = 0, add = 0;
+
 	add = new;
 	sum = old + new;
 	while (sum < 4000000)
