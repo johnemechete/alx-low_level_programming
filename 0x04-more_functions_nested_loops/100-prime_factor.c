@@ -7,23 +7,23 @@
 
 int main(void)
 {
-	unsigned long int n, i;
+	long int prime = 612852475143;
+	long int quotient = prime;
+	long int divisor = 2;
 
-	n = 612852475143;
-	i = 2;
-
-	while (n != i)
+	while (quotient != divisor)
 	{
-		if (n % 2 == 0)
+		if (quotient % divisor == 0)
 		{
-			n = n / 2;
+			quotient = quotient / divisor;
 		}
 		else
 		{
-			i++;
+			divisor++;
 		}
 	}
 
-	printf("%li\n", n);
+	printf("%li\n", quotient);
+
 	return (0);
 }
