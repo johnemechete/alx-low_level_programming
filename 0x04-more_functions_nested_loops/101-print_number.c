@@ -28,8 +28,9 @@ void print_number(int n)
 	int div, one = 1;
 	int start = zer = 0;
 	int place = mod = 10;
+	int dash = 45;
 
-	if (n < 0)
+	if (n < zer)
 	{
 		neg = one;
 		n = n * -one;
@@ -46,7 +47,7 @@ void print_number(int n)
 		{
 			start = one;
 			if (neg == one)
-				_putchar('-');
+				_putchar(dash);
 			_putchar(zero + len);
 			place--;
 		}
