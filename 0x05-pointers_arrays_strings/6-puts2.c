@@ -18,11 +18,14 @@ void puts2(char *str)
 	len = i - 1;
 
 
-	for (i = 0; i <= len; i++)
+	i = 0;
+	while (i <= len)
 	{
 		if (i != 0)
 			i++;
 		_putchar(str[i]);
+		if (str[i++] == '\0')
+			break;
 	}
 	_putchar('\n');
 }
