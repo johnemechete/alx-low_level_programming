@@ -1,35 +1,26 @@
 #include "main.h"
 
 /**
-* cap_string - concatenates two strings.
+* rot13 - concatenates two strings.
 * @s: the main string
 * Return: returns a string
 */
 
-char *cap_string(char *s)
+char *rot13(char *s)
 {
-	int i;
-	int prev;
+	int i, j;
+	char alp1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char alp2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		prev = i - 1;
-		if (s[i] >= 'a' && s[i] <= 'z')
+		for (j = 0; alp1[j] != '\0'; j++)
 		{
-			if (i == 0)
-				s[i] = s[i] - 32;
-			else if (s[prev] >= 9 && s[prev] <= 10)
-				s[i] = s[i] - 32;
-			else if (s[prev] >= 32 && s[prev] <= 34)
-				s[i] = s[i] - 32;
-			else if (s[prev] >= 40 && s[prev] <= 41)
-				s[i] = s[i] - 32;
-			else if (s[prev] == 46)
-				s[i] = s[i] - 32;
-			else if (s[prev] == 59)
-				s[i] = s[i] - 32;
-			else if (s[prev] == 123 || s[prev] == 125)
-				s[i] = s[i] - 32;
+			if (alp1[j] == s[i])
+			{
+				s[i] =alp2[j];
+				break;
+			}
 		}
 	}
 
