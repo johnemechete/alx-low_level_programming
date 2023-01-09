@@ -15,15 +15,15 @@ char *_strdup(char *str)
 	char *arr;
 	int i, size;
 
-	for (size = 0; str[size] != '\0'; size++)
-		;
-	arr = (char *)malloc(size * sizeof(char));
-
-	if (arr == NULL)
+	if (str == NULL)
 	{
 		printf("Memory not available");
 		return (NULL);
 	}
+	for (size = 0; str[size] != '\0'; size++)
+		;
+	arr = (char *)malloc(size * sizeof(char));
+
 	if (size == 0)
 		return (NULL);
 	for (i = 0; i < size; i++)
