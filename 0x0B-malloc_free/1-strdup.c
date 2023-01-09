@@ -17,12 +17,11 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		printf("Memory not available");
 		return (NULL);
 	}
 	for (size = 0; str[size] != '\0'; size++)
 		;
-	arr = (char *)malloc(size * sizeof(char));
+	arr = malloc((1 + size) * sizeof(char));
 
 	if (size == 0)
 		return (NULL);
