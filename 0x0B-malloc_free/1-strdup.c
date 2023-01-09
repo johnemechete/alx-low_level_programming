@@ -12,10 +12,11 @@
 
 char *_strdup(char *str)
 {
-	char *arr;
+	char *arr, *empt;
 	int i, size;
 
-	if (str[1] == '\0')
+	empt = "";
+	if (str[1] == *empt)
 	{
 		arr = malloc(sizeof(char));
 		return (arr);
