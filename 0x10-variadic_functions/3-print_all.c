@@ -44,6 +44,7 @@ void print_float(va_list args)
 	printf("%f", va_arg(args, double));
 }
 
+
 /**
  * print_all - Print any type of given argument
  * @format: List of types of arguments being passed
